@@ -13,7 +13,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000.](https://portfolio-phi-beryl-63onbu42j8.vercel.app/)
+Open https://portfolio-phi-beryl-63onbu42j8.vercel.app/
 
 For a production build:
 
