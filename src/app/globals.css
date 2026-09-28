@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Space Grotesk", ui-sans-serif, sans-serif;
+  --font-body: "Inter", ui-sans-serif, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #0F1013;
+  color: #E1E3E4;
+  scroll-behavior: auto !important;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+body {
+  background: #0F1013;
+  color: #E1E3E4;
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #920513;
+  color: #E1E3E4;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: #F4AEA8;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 10001;
+  background: #920513;
+  color: #E1E3E4;
+  padding: 10px 16px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.skip-link:focus {
+  left: 16px;
+  top: 16px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #920513;
+  outline-offset: 2px;
+}
+
+/* Minimal solid clean card panel */
+.card-panel {
+  background: #0F1013;
+  border: 1px solid #4C5665;
+  border-radius: 8px;
+  transition: border-color 0.25s ease, transform 0.3s ease;
+}
+
+.card-panel:hover {
+  border-color: #920513;
+}
+
+/* Solid Clean Toggle Pills */
+.clean-toggle {
+  background: #0F1013;
+  border: 1px solid #4C5665;
+  color: #BBC6CF;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.clean-toggle:hover {
+  border-color: #920513;
+  color: #E1E3E4;
+}
+
+.clean-toggle-active {
+  background: #920513 !important;
+  border-color: #920513 !important;
+  color: #E1E3E4 !important;
+}
+
+/* 3D Spatial Depth System */
+.perspective-3d {
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
+
+.card-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
+}
+
+.card-3d:hover {
+  transform: translateY(-4px) rotateX(3deg) rotateY(-2deg) translateZ(10px);
+}
+
+.depth-layer-1 {
+  transform: translateZ(15px);
+}
+
+.depth-layer-2 {
+  transform: translateZ(30px);
+}
+
+.depth-layer-3 {
+  transform: translateZ(45px);
+}
+
+button,
+a {
+  transition: border-color 180ms ease, color 180ms ease, background-color 180ms ease, transform 180ms ease;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F1013;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4C5665;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #920513;
+}
+
+textarea,
+input {
+  font: inherit;
+}
