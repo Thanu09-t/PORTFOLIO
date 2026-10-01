@@ -57,11 +57,13 @@ function TimelineItem({
   title,
   body,
   link,
+  linkLabel = "View Certificate ↗",
 }: {
   year: string;
   title: string;
   body: string;
   link?: string;
+  linkLabel?: string;
 }) {
   return (
     <motion.div
@@ -84,7 +86,7 @@ function TimelineItem({
             data-cursor="VIEW"
             className="font-mono text-[11px] text-[#F4AEA8] hover:text-white inline-flex items-center gap-1 transition-colors underline-offset-4 hover:underline"
           >
-            Certificate ↗
+            {linkLabel}
           </a>
         )}
       </div>

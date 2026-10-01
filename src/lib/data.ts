@@ -57,13 +57,43 @@ export const PROJECTS: Project[] = [
   },
 ];
 
-export type ExperienceItem = { year: string; title: string; body: string; link?: string };
+export type ExperienceItem = {
+  year: string;
+  title: string;
+  body: string;
+  link?: string;
+  linkLabel?: string;
+};
 
 export const EXPERIENCE: ExperienceItem[] = [
-  { year: "2026", title: "Android Development using Generative AI — Intern", body: "Built Android applications integrating generative-AI features with Kotlin and Android Studio, collaborating on app flows, testing, and deployment.", link: "/certificates/mindmatrix-internship-completion-letter.pdf" },
-  { year: "2025", title: "Artificial Intelligence & Machine Learning — Intern", body: "30-day virtual internship contributing to model development and evaluation — preprocessing datasets, training models in Python, TensorFlow and Scikit-learn, and presenting results to mentors.", link: "/certificates/kodacy-aiml-internship.pdf" },
-  { year: "2025", title: "TCS iON Career Edge — Young Professional", body: "Foundation program in corporate etiquette, communication, soft skills, and workplace readiness.", link: "/certificates/tcs-ion-career-edge.pdf" },
-  { year: "2025", title: "Certificate of Internship — AI/ML, Kodacy × SPACE", body: "Completed applied AI/ML internship certification in association with SPACE.", link: "/certificates/kodacy-aiml-internship.pdf" },
+  {
+    year: "2026",
+    title: "Android Development using Generative AI — Intern",
+    body: "Built Android applications integrating generative-AI features with Kotlin and Android Studio, collaborating on app flows, testing, and deployment.",
+    link: "/certificates/mindmatrix-internship-completion-letter.pdf",
+    linkLabel: "View Certificate ↗",
+  },
+  {
+    year: "2026",
+    title: "Claude Code 101 — Anthropic",
+    body: "Official completion of Claude Code 101 certification by Anthropic, mastering agentic coding workflows, prompt architecture, tool use, and generative AI engineering.",
+    link: "/certificates/claude-code-101.pdf",
+    linkLabel: "View Certificate ↗",
+  },
+  {
+    year: "2025",
+    title: "TCS iON Career Edge — Young Professional",
+    body: "Foundation program in corporate etiquette, communication, soft skills, and workplace readiness.",
+    link: "/certificates/tcs-ion-career-edge.pdf",
+    linkLabel: "View Certificate ↗",
+  },
+  {
+    year: "2025",
+    title: "Certificate of Internship — AI/ML, Kodacy × SPACE",
+    body: "Completed applied AI/ML internship certification in association with SPACE.",
+    link: "/certificates/kodacy-aiml-internship.pdf",
+    linkLabel: "View Certificate ↗",
+  },
 ];
 
 export type Certification = {
