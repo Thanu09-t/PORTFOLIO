@@ -13,7 +13,7 @@ npm install
 npm run dev
 ```
 
-Open https://portfolio-phi-beryl-63onbu42j8.vercel.app/
+Open [https://portfolio-3vz5.vercel.app/)
 
 For a production build:
 
